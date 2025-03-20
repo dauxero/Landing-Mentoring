@@ -1,6 +1,6 @@
 import React from "react";
 interface UnlockSectionProps {
-  unlockContent: {
+  dataUnlock: {
     title: string;
     description: string;
     buttonText: string;

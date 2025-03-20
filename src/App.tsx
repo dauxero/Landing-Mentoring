@@ -18,6 +18,7 @@ import dataHeroContent from "./utility/dataHeroContent.ts";
 import dataClients from "./utility/dataClients.ts";
 import dataFooter from "./utility/dataFooter.ts";
 import dataUnlock from "./utility/dataUnlock.ts";
+
 function App() {
   return (
     <>

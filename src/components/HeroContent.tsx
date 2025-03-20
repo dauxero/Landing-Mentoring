@@ -1,6 +1,6 @@
 import React from "react";
 
-interface HeroContentProps {
+interface dataHeroContentProps {
   title: string;
   highlightedText: string;
   subtitle: string;
@@ -9,7 +9,7 @@ interface HeroContentProps {
   onButtonClick?: () => void;
 }
 
-export const HeroContent = ({ dataHeroContent }: HeroContentProps) => {
+export const HeroContent = ({ dataHeroContent }: dataHeroContentProps) => {
   const {
     title,
     highlightedText,
