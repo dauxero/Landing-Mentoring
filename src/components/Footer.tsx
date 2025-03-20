@@ -124,7 +124,7 @@ const Footer = ({ dataFooter }: FooterProps) => {
   };
 
   return (
-    <footer className="bg-gray-50">
+    <footer className="bg-gray-50 text-gray-800">
       {/* CTA Section */}
       <div className="py-12 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 text-center">
@@ -141,11 +141,11 @@ const Footer = ({ dataFooter }: FooterProps) => {
       </div>
 
       {/* Main Footer */}
-      <div className="bg-gray-800 text-white py-12">
+      <div className="bg-gray-800 text-white py-12 flex flex-col justify-center">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="flex items-center">
+            <div className="flex items-center justify-center md:justify-start">
               <img
                 src={companyInfo.logo || "/placeholder.svg"}
                 alt="Nexcent Logo"
@@ -153,12 +153,12 @@ const Footer = ({ dataFooter }: FooterProps) => {
               />
               <span className="ml-2 text-xl font-bold">Nexcent</span>
             </div>
-            <p className="text-sm text-gray-300">
+            <p className="text-sm text-gray-300 text-center md:text-left">
               {companyInfo.copyright}
               <br />
               {companyInfo.allRightsReserved}
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center items-center md:justify-start">
               {companyInfo.socialLinks.map((link) => (
                 <a
                   key={link.id}
@@ -173,9 +173,11 @@ const Footer = ({ dataFooter }: FooterProps) => {
           </div>
 
           {/* Company Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">{companyLinks.title}</h3>
-            <ul className="space-y-4">
+          <div className="">
+            <h3 className="text-lg font-semibold mb-6 text-center">
+              {companyLinks.title}
+            </h3>
+            <ul className="space-y-4 flex flex-col items-center">
               {companyLinks.links.map((link) => (
                 <li key={link.id}>
                   <a
@@ -191,8 +193,10 @@ const Footer = ({ dataFooter }: FooterProps) => {
 
           {/* Support Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">{supportLinks.title}</h3>
-            <ul className="space-y-4">
+            <h3 className="text-lg font-semibold mb-6 text-center">
+              {supportLinks.title}
+            </h3>
+            <ul className="space-y-4 flex flex-col items-center ">
               {supportLinks.links.map((link) => (
                 <li key={link.id}>
                   <a
@@ -208,8 +212,10 @@ const Footer = ({ dataFooter }: FooterProps) => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-lg font-semibold mb-6">{newsletter.title}</h3>
-            <form onSubmit={handleSubmit} className="flex">
+            <h3 className="text-lg font-semibold mb-6 text-center">
+              {newsletter.title}
+            </h3>
+            <form onSubmit={handleSubmit} className="flex md:mx-0 ml-8 md:ml-0">
               <input
                 type="email"
                 value={email}
