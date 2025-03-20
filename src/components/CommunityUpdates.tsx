@@ -34,11 +34,11 @@ const CommunityUpdates = ({
             key={id}
             className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105"
           >
-            <div className="relative h-56 w-full">
+            <div className="relative flex flex-col items-center max-w-[285px]">
               <img
                 src={image}
                 alt="imagenes del post"
-                className="w-full h-full object-cover"
+                className="h-auto max-h-[286px] max-w-[368px] object-cover"
               />
             </div>
             <div className="p-6">

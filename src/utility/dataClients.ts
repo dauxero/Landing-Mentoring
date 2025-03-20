@@ -37,11 +37,6 @@ const dataClients = {
       name: "Client 6",
       logoSrc: logo_client_one,
     },
-    {
-      id: 7,
-      name: "Client 7",
-      logoSrc: logo_client_two,
-    },
   ],
 };
 
