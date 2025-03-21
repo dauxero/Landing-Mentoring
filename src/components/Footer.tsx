@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router";
 
 interface SocialLink {
   id: number;
@@ -131,12 +132,12 @@ const Footer = ({ dataFooter }: FooterProps) => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
             {ctaSection.title}
           </h2>
-          <a
-            href={ctaSection.buttonLink}
+          <Link
+            to={ctaSection.buttonLink}
             className="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-md transition-colors"
           >
             {ctaSection.buttonText} →
-          </a>
+          </Link>
         </div>
       </div>
 

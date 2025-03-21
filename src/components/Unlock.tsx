@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router";
+
 interface UnlockSectionProps {
   dataUnlock: {
     title: string;
@@ -23,7 +25,7 @@ const Unlock = ({ dataUnlock }: UnlockSectionProps) => {
         </div>
 
         {/* Contenido de texto */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 flex flex-col items-center md:items-start">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-700 mb-6">
             {title}
           </h2>
